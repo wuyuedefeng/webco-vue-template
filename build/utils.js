@@ -64,7 +64,10 @@ exports.cssLoaders = function (options) {
       {
         loader: 'sass-resources-loader',
         options: {
-          resources: path.resolve(__dirname, '../src/assets/stylesheets/mixins/var.scss')
+          resources: [
+            path.resolve(__dirname, '../src/assets/stylesheets/mixins/var.scss'),
+            path.resolve(__dirname, '../src/assets/stylesheets/mixins/animation.scss')
+          ]
         }
       }
     ),
